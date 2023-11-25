@@ -9,8 +9,8 @@ export const auth = lucia({
 	adapter: planetscale(connection, {
 		user: 'auth_user',
 		key: 'user_key',
-		session: 'user_session'
-	})
+		session: 'user_session',
+	}),
 });
 
 export type Auth = typeof auth;

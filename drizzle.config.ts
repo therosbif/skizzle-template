@@ -5,8 +5,8 @@ export default defineConfig({
 	schema: './db/schema.ts',
 	driver: 'mysql2',
 	dbCredentials: {
-		uri: env.DATABASE_URL
+		uri: env.DATABASE_URL,
 	},
 	verbose: true,
-	strict: true
+	strict: true,
 });
